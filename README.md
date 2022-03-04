@@ -11,4 +11,16 @@ By doing this strategy, this guarentees that everyone excluding the leader refil
 
 
 ### Efficiency:
-The solution is pretty innefficient. For every time that the leader enters the labyrinth, someone that hasn't refilled the plate must have entered as well. This is somewhat of a linear process for each time the leader enters, and the leader has to enter N times, so the efficiency is probably an average of _O_(_N_^2).
+The solution is pretty inefficient. For every time that the leader enters the labyrinth, someone that hasn't refilled the plate must have entered as well. This is somewhat of a linear process for each time the leader enters, and the leader has to enter N times, so the efficiency is probably an average of _O_(_N_^2).
+
+
+## Problem 2: Minotaur’s Crystal Vase
+
+### Strategy 1:
+Strategy 1 is really inefficient, mostly because anyone can try and go into the showroom. By allowing that, every guest that wants to go in is trying to go inside constantly. It's possible that a guest can't get in there since it's not queue based. For example, if there are 5 guests, and guests 1, 2, 3, 4 continuously go in while guest 5 is stuck outside, guest 5 would be stuck never getting to go inside.
+
+### Strategy 2:
+Strategy 2 is better than strategy 1, but is still troublesome. It's basically first come first serve for when the room is available, but, if you know that the room is unavailable, you can do other things before trying to come back and check again. You run into the same issues as strategy 1, where a guest might never be able to enter because others will come by and go into the showroom while that guest is busy doing other things. The benefit though is that a guest doesn't have to waste time. This is just strategy 1, but you don't have to wait at the door to see if you can enter.
+
+### Strategy 3:
+Strategy 3 is a good strategy. The benefit to strategy 3 is that everyone will eventually get their turn, since a guest can just enter the queue and wait for their turn. The disadvantage is that it takes time, since you have to wait in the queue. This is just strategy 1 but with the guarantee that everyone will eventually get to go in.
