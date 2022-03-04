@@ -14,6 +14,13 @@ By doing this strategy, this guarentees that everyone excluding the leader refil
 The solution is pretty inefficient. For every time that the leader enters the labyrinth, someone that hasn't refilled the plate must have entered as well. This is somewhat of a linear process for each time the leader enters, and the leader has to enter N times, so the efficiency is probably an average of _O_(_N_^2).
 
 
+### Instructions to run problem 1
+
+Run the command `g++ --std=c++17 -pthread -O2 -o assignment2part1 assignment2part1.cpp` to compile the code.
+
+Run the command `./assignment2part1` to run the code.
+
+
 ## Problem 2: Minotaur’s Crystal Vase
 
 ### Strategy 1:
