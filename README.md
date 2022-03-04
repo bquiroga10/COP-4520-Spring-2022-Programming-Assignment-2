@@ -33,7 +33,7 @@ Strategy 2 is better than strategy 1, but is still troublesome. It's basically f
 Strategy 3 is a good strategy. The benefit to strategy 3 is that everyone will eventually get their turn, since a guest can just enter the queue and wait for their turn. The disadvantage is that it takes time, since you have to wait in the queue. This is just strategy 1 but with the guarantee that everyone will eventually get to go in.
 
 ### Implementation
-I decided to code strategy 3. I decided to give the guests a 50% chance of rejoining the queue, and that each guest starts in the queue (in a random order). After everyone has a chance to join the queue, it's expected half of them will not join the queue, and after the expected half that did join the queue, a half of those will rejoin and so on. This is the geometric series _N_ + (_N_ / 2) + (_N_ / 4) + ..., which comes out to be 2 * _N_, so the runtime of what I coded is _O_(_N_^2).
+I decided to code strategy 3. I decided to give the guests a 50% chance of rejoining the queue, and that each guest starts in the queue (in a random order). After everyone has a chance to join the queue, it's expected half of them will not join the queue, and after the expected half that did join the queue, a half of those will rejoin and so on. This is the geometric series _N_ + (_N_ / 2) + (_N_ / 4) + ..., which comes out to be 2 * _N_, so the runtime of what I coded is on average _O_(_N_^2).
 
 ### Instructions to run problem 2
 
