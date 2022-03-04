@@ -11,4 +11,4 @@ By doing this strategy, this guarentees that everyone excluding the leader refil
 
 
 ### Efficiency:
-The solution is pretty innefficient. For every time that the leader enters the labyrinth, someone that hasn't refilled the plate must have entered as well. This is somewhat of a linear process for each time the leader enters, and the leader has to enter N times, so the efficiency is probably an average of _O_(_n_^2).
+The solution is pretty innefficient. For every time that the leader enters the labyrinth, someone that hasn't refilled the plate must have entered as well. This is somewhat of a linear process for each time the leader enters, and the leader has to enter N times, so the efficiency is probably an average of _O_(_N_^2).
